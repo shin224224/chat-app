@@ -1,7 +1,7 @@
 .wrapper{
   display: flex;
 }
-.side-bar{
+.side_bar{
   background-color: #253141;
   width: 300px;
   height: 100vh;
@@ -33,7 +33,7 @@
 }
 .rooms{
   background-color: #2F3E51;
-  height: calc(100vh-100px);
+  height: calc(100vh - 100px);
   padding: 0 20px;
   overflow: scroll;
 }
@@ -70,7 +70,7 @@ padding: 20px;
 }
 .messages{
   background-color: #FAFAFA;
-  height: calc(100vh-100px-90px);
+  height: calc(100vh - 100px - 90px);
   padding: 40px 40px 0;
   overflow: scroll;
 }
