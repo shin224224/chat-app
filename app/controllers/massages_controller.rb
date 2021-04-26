@@ -2,6 +2,7 @@ class MassagesController < ApplicationController
   def index
     @message = Message.new
     @room = Room.find(paramas[:room_id])
+    @messages = @room.message.includes(:user)
 
   end
 
@@ -14,6 +15,7 @@ class MassagesController < ApplicationController
       redirect_to room_messages_path(@room)
     else
       render :index
+      @messages = @room.messages.includes(:user)
     end
 end
 
